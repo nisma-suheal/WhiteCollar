@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/hover-min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <!-- layer in page -->
+   <div class="layer fixed translate-x-0 z-50 top-0 left-0 bottom-0 w-1/2 flex justify-center items-center transition duration-300 ease-in-out" style="background-image: url(assets/images/imageL.jpg); background-repeat: no-repeat; background-size: cover;">
+    <button class="btns bg-gray-200 w-28 h-28 rounded-full font-semibold text-lg animate-pulse hover:animate-none cursor-pointer">Login</button>
+   </div>
+    
+    <section class=" flex justify-between items-between">
+        <div class="login ml-15 mt-20 relative ">
+            <h3 class="text-4xl font-semibold">Login</h3>
+            <p class="text-gray-600 pt-4 pb-4">please enter your email and password to login</p>
+            <p id="publicError" class=" text-red-700 text-xs mb-1"></p>
+
+        <form action="" id="loginForm">
+            <div class="pb-4">
+                <label class="block" for="">Email</label>
+                <input id="loginEmail" class="border border-gray-300 rounded px-3 py-1.5 w-150 outline-0" type="email">
+
+            </div> 
+            <div class="pb-4">
+                <label class="block" for="password">Passowrd</label>
+                <input id="loginPassword"  class="border border-gray-300 rounded px-3 py-1.5 w-150 outline-0" type="password" >
+                    <p id="loginPassword-error" class=" text-red-700 text-xs mb-1"></p>
+            </div> 
+            <div class="pb-4">
+                <input  type="checkbox">
+                <label for="">Remember Me</label>
+            </div> 
+            <div>
+                <button id="login"  type="submit" class="bg-emerald-800 text-white px-7 py-2 rounded">Login</button>
+            </div>
+        </form>
+         </div>
+
+         <div class="sign mr-20 mt-20">
+            <h3 class="text-4xl font-semibold">Sign In</h3>
+            <p class="text-gray-600 pt-4 pb-4">please enter your informations to sign in</p>
+            <form id="signInForm" action="">
+                <div class="flex justify-between gap-2">
+                    <div class="pb-4">
+                    <label  class="block"  for="">First Name</label>
+                    <input id="firstName" class="border border-gray-300 rounded px-3 py-1.5 w-75 outline-0" type="text">
+                    <p id="firstName-error" class=" text-red-700 text-xs mb-1"></p>
+                </div>
+                 <div class="pb-4">
+                    <label  class="block"  for="">Last Name</label>
+                    <input  id="lastName" class="border border-gray-300 rounded px-3 py-1.5 w-75 outline-0" type="text">
+                    <p id="lastName_error" class=" text-red-700 text-xs mb-1"></p>
+                </div>
+                </div>
+                <div class="pb-4">
+                    <label  class="block"  for="">Email</label>
+                    <input id="email" class="border border-gray-300 rounded px-3 py-1.5 w-150 outline-0" type="text">
+                    <p id="email_error" class=" text-red-700 text-xs mb-1"></p>
+
+                </div>
+                <div class="pb-4">
+                    <label  class="block"  for="">Phone Number</label>
+                    <input id="number" class="border border-gray-300 rounded px-3 py-1.5 w-150 outline-0" type="password">
+                    <p id="number_error" class=" text-red-700 text-xs mb-1"></p>
+                </div>
+
+                <div class="pb-4">
+                    <label class="block" for="bio">Bio</label>
+                    <textarea id="bio" rows="3" class="border border-gray-300 rounded px-3 py-1.5 w-150 resize-none outline-0"></textarea>
+                    <p id="bio_error" class="text-red-700 text-xs mb-1"></p>
+                </div>
+
+                <div class="pb-4">
+                    <label  class="block"  for="password">Password</label>
+                    <input  id="signPassword" class="border border-gray-300 rounded px-3 py-1.5 w-150 focus:outline-none focus:ring-0 " type="text">
+                    <p id="signPassword_error" class=" text-red-700 text-xs mb-1"></p>
+                </div>
+                <div>
+                    <button type="submit" class="bg-emerald-800 text-white px-7 py-2 rounded">Sign In</button>
+                </div>
+            </form>
+         </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+      <script src="assets/js/login.js"></script>
+      
+</body>
+</html>
