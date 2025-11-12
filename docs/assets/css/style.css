@@ -985,7 +985,11 @@ a:hover {
         font-size: 18px;
     }
     .menuBtn {
+<<<<<<< HEAD
         padding: 6px 10px;
+=======
+        padding: 8px 12px;
+>>>>>>> f17701020414174c4ac5e6af1daa56b718cdaf3a
     }
     .menu {
         display: block;
